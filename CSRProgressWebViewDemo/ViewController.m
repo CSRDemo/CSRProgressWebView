@@ -8,8 +8,11 @@
 
 #import "ViewController.h"
 #import "CSRProgressWebView.h"
+#import "KINWebBrowserViewController.h"
 
-@interface ViewController ()
+static NSString *const defaultAddress = @"https://www.baidu.com";
+
+@interface ViewController ()  <KINWebBrowserDelegate>
 
 @end
 
@@ -31,8 +34,28 @@
     [self.navigationController pushViewController:webView animated:YES];
 }
 - (IBAction)webBrower:(UIButton *)sender {
-    
+    KINWebBrowserViewController *webBrowser = [KINWebBrowserViewController webBrowser];
+    [webBrowser setDelegate:self];
+    [self.navigationController pushViewController:webBrowser animated:YES];
+    [webBrowser loadURLString:defaultAddress];
+}
+#pragma mark - KINWebBrowserDelegate Protocol Implementation
+
+- (void)webBrowser:(KINWebBrowserViewController *)webBrowser didStartLoadingURL:(NSURL *)URL {
+    NSLog(@"Started Loading URL : %@", URL);
 }
 
+- (void)webBrowser:(KINWebBrowserViewController *)webBrowser didFinishLoadingURL:(NSURL *)URL {
+    NSLog(@"Finished Loading URL : %@", URL);
+}
+
+- (void)webBrowser:(KINWebBrowserViewController *)webBrowser didFailToLoadURL:(NSURL *)URL withError:(NSError *)error {
+    NSLog(@"Failed To Load URL : %@ With Error: %@", URL, error);
+}
+
+- (void)webBrowserViewControllerWillDismiss:(KINWebBrowserViewController*)viewController {
+    NSLog(@"View Controller will dismiss: %@", viewController);
+    
+}
 
 @end

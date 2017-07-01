@@ -17,9 +17,11 @@
 		3F96A9701F075ED800755BA8 /* NSTimer+CSRAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F96A96F1F075ED800755BA8 /* NSTimer+CSRAddition.m */; };
 		3F96A9731F075F1E00755BA8 /* CSRProgressWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F96A9721F075F1E00755BA8 /* CSRProgressWebView.m */; };
 		3F96A9761F075FB900755BA8 /* CSRWebProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F96A9751F075FB900755BA8 /* CSRWebProgressLayer.m */; };
+		E4226B5278F6FDC946D4D7F2 /* libPods-CSRProgressWebViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274B53CF91CA007D4A24C8BA /* libPods-CSRProgressWebViewDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		274B53CF91CA007D4A24C8BA /* libPods-CSRProgressWebViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CSRProgressWebViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F96A94D1F075DCD00755BA8 /* CSRProgressWebViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSRProgressWebViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F96A9511F075DCD00755BA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F96A9531F075DCD00755BA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		3F96A9721F075F1E00755BA8 /* CSRProgressWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRProgressWebView.m; sourceTree = "<group>"; };
 		3F96A9741F075FB900755BA8 /* CSRWebProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRWebProgressLayer.h; sourceTree = "<group>"; };
 		3F96A9751F075FB900755BA8 /* CSRWebProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRWebProgressLayer.m; sourceTree = "<group>"; };
+		6CD25DCFBD65B1CBC15212F1 /* Pods-CSRProgressWebViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSRProgressWebViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSRProgressWebViewDemo/Pods-CSRProgressWebViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A9A23002C10421791F38A104 /* Pods-CSRProgressWebViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSRProgressWebViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSRProgressWebViewDemo/Pods-CSRProgressWebViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4226B5278F6FDC946D4D7F2 /* libPods-CSRProgressWebViewDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,8 @@
 			children = (
 				3F96A94F1F075DCD00755BA8 /* CSRProgressWebViewDemo */,
 				3F96A94E1F075DCD00755BA8 /* Products */,
+				BEABBE8DFE87AE238B4A182A /* Pods */,
+				FC63A351D5CF71B9AAEA3EDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +114,23 @@
 			path = WebView;
 			sourceTree = "<group>";
 		};
+		BEABBE8DFE87AE238B4A182A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9A23002C10421791F38A104 /* Pods-CSRProgressWebViewDemo.debug.xcconfig */,
+				6CD25DCFBD65B1CBC15212F1 /* Pods-CSRProgressWebViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC63A351D5CF71B9AAEA3EDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				274B53CF91CA007D4A24C8BA /* libPods-CSRProgressWebViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F96A9641F075DCD00755BA8 /* Build configuration list for PBXNativeTarget "CSRProgressWebViewDemo" */;
 			buildPhases = (
+				198EAFD8B4C9C09937C555EB /* [CP] Check Pods Manifest.lock */,
 				3F96A9491F075DCD00755BA8 /* Sources */,
 				3F96A94A1F075DCD00755BA8 /* Frameworks */,
 				3F96A94B1F075DCD00755BA8 /* Resources */,
+				47F57C63D4ED1EA824824700 /* [CP] Embed Pods Frameworks */,
+				18FFF417F12E386BBBF8A420 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,6 +200,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18FFF417F12E386BBBF8A420 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSRProgressWebViewDemo/Pods-CSRProgressWebViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		198EAFD8B4C9C09937C555EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		47F57C63D4ED1EA824824700 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CSRProgressWebViewDemo/Pods-CSRProgressWebViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F96A9491F075DCD00755BA8 /* Sources */ = {
@@ -303,6 +378,7 @@
 		};
 		3F96A9651F075DCD00755BA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9A23002C10421791F38A104 /* Pods-CSRProgressWebViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Huajun Zhong (P96EFHNMSV)";
@@ -318,6 +394,7 @@
 		};
 		3F96A9661F075DCD00755BA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CD25DCFBD65B1CBC15212F1 /* Pods-CSRProgressWebViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Huajun Zhong (P96EFHNMSV)";
@@ -350,6 +427,7 @@
 				3F96A9661F075DCD00755BA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>ARChromeActivity.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>KINWebBrowser.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Pods-CSRProgressWebViewDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>TUSafariActivity-TUSafariActivity.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>TUSafariActivity.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>344B9D4E0D61825D02C791E133E04AA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4F83220D037519E2438206A62676C796</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5669B068738519A6EAD13AFC2489CD92</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>63335519E63547BD38F9CFDD8DA8112A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE6ACB757539BC6368562A1B2AE5F192</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
